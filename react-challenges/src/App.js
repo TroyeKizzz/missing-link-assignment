@@ -1,5 +1,6 @@
 import './App.css';
 import Ex1 from './exercises/ex1';
+import Ex2 from './exercises/ex2';
 import React, {useState} from 'react';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       <button value={9} onClick={processClick}>Exercise 9</button>
       <br/>
       {exerciseNum == 1 ? <Ex1/> : ""}
-
+      {exerciseNum == 2 ? <Ex2/> : ""}
     </div>
   );
 }
