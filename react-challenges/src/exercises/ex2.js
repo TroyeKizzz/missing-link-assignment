@@ -7,7 +7,7 @@ function Ex2() {
     }
     
     return (
-        <div className="exercise" id='ex2'>
+        <div className="exercise">
             <button onClick={processClick}>Click me</button>
         </div>
     );

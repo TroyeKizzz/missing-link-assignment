@@ -9,7 +9,7 @@
     margin: 20px auto;
 }
 
-.ex2-button {
+.ex3-button {
     margin-right: 5px;
 }
 
@@ -23,4 +23,8 @@
     border-style: groove;
     padding: 8px 20px;
     margin: auto;
+}
+
+.ex7-element {
+    width: 250px;
 }

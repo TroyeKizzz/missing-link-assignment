@@ -8,7 +8,7 @@ function Ex4() {
     }
     
     return (
-        <div className="exercise" id='ex2'>
+        <div className="exercise">
             <p>Button has been clicked {clicks} {clicks > 1 || clicks === 0 ? "times":"time"}</p>
             <button onClick={processClick}>Click me</button>
         </div>

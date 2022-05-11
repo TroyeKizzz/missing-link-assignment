@@ -9,7 +9,7 @@ function MyButton(props) {
     }
     
     return (
-        <button onClick={processClick} className='ex2-button'>{props.children}</button>
+        <button onClick={processClick} className='ex3-button'>{props.children}</button>
     );
 }
 
