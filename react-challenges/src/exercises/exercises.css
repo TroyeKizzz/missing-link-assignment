@@ -28,3 +28,10 @@
 .ex7-element {
     width: 250px;
 }
+
+#ex8 {
+    background-color: rgb(221, 247, 214);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
