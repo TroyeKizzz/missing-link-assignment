@@ -7,6 +7,7 @@ import Ex5 from './exercises/ex5';
 import Ex6 from './exercises/ex6';
 import Ex7 from './exercises/ex7';
 import Ex8 from './exercises/ex8';
+import Ex9 from './exercises/ex9';
 import React, {useState} from 'react';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
       {exerciseNum === '6' ? <Ex6/> : ""}
       {exerciseNum === '7' ? <Ex7/> : ""}
       {exerciseNum === '8' ? <Ex8/> : ""}
+      {exerciseNum === '9' ? <Ex9/> : ""}
     </div>
   );
 }

@@ -18,7 +18,7 @@ function Ex8() {
     
     return (
         <div className="exercise" id='ex8'>
-            {array.map((element) => <Card data={element}/>)}
+            {array.map((element, index) => <Card key={index} data={element}/>)}
         </div>
     );
 }
