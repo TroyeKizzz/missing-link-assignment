@@ -3,18 +3,24 @@ A repository to showcase my capabilities in React.js for Missing-link Oy
 
 ## Introduction
 This is a repository that displays my solutions of exercises from [this website](https://coderfiles.dev/blog/reactjs-coding-exercises/). 
+Additionally, there are my solutions of the tasks provided to me privately by an employee of Missing-link Oy.
 
 ## Usage
 1. Download repo
 ```bash
 git clone https://github.com/TroyeKizzz/missing-link-assignment.git
 ```
-3. Install packages
+2. (a) Install packages: Task 1
 ```bash
 cd missing-link-assignment/react-challenges
 npm install
 ```
-4. Start the server
+2. (b) Install packages: Task 2
+```bash
+cd missing-link-assignment/task2-app
+npm install
+```
+3. Start the server
 ```bash
 npm start
 ```
@@ -48,4 +54,16 @@ Finished exercise 8
 Finished exercise 9
 
 ### 0.1.0
-All exercises finished
+All exercises from task 1 finished
+
+### 0.1.1
+Added custom component AppBar (top bar)
+
+### 0.1.2
+Added custom component Drawer (side bar)
+
+### 0.1.3
+Added router
+
+### 0.2.0
+All exercises from task 2 finished
