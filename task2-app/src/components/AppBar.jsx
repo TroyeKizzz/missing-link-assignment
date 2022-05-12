@@ -2,10 +2,12 @@ import MuiAppBar from '@mui/material/AppBar';
 import { Toolbar, IconButton, Tooltip, Avatar, Badge, Menu, Typography, MenuItem, Divider } from '@mui/material';
 import {Person, Settings, Logout} from '@mui/icons-material';
 import image from './avatar.jpg';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 function AppBar() {
+    let navigate = useNavigate();
     const [anchorElUser, setAnchorElUser] = React.useState(null);
     const handleOpenUserMenu = (event) => {
         setAnchorElUser(event.currentTarget);
@@ -13,6 +15,15 @@ function AppBar() {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
+    const navigateToProfile = () => {
+        navigate('/profile');
+    }
+    const navigateToHome = () => {
+        navigate('/');
+    }
+    const navigateToSettings = () => {
+        navigate('/settings');
+    }
     return (
         <div>
             <MuiAppBar sx={{ bgcolor: "#4E008E" }}>
@@ -40,17 +51,17 @@ function AppBar() {
                             </Badge>
                             <Typography>Your Name</Typography>
                         </MenuItem>
-                        <MenuItem>
+                        <MenuItem onClick={navigateToProfile}>
                             <Person className='icon'/>
                             <Typography>Profile</Typography>
                         </MenuItem>
                         <Divider/>
-                        <MenuItem>
+                        <MenuItem onClick={navigateToSettings}>
                             <Settings className='icon'/>
                             <Typography>Settings</Typography>
                         </MenuItem>
                         <Divider/>
-                        <MenuItem>
+                        <MenuItem onClick={null}>
                             <Logout className='icon'/>
                             <Typography>Logout</Typography>
                         </MenuItem>
