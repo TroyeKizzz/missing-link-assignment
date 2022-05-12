@@ -1,13 +1,19 @@
 import './App.css';
-import AppBar from './components/AppBar';
-import Drawer from './components/Drawer';
+import React from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Settings from './pages/Settings';
 
 function App() {
   return (
-    <div className="App">
-      <AppBar/>
-      <Drawer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/settings' element={<Settings/>}/>
+      </Routes>
+    </Router>
   );
 }
 
