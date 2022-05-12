@@ -1,9 +1,9 @@
 import MuiAppBar from '@mui/material/AppBar';
 import { Toolbar, IconButton, Tooltip, Avatar, Badge, Menu, Typography, MenuItem, Divider } from '@mui/material';
 import {Person, Settings, Logout} from '@mui/icons-material';
-import image from './avatar.jpeg';
+import image from './avatar.jpg';
 import React from 'react';
-import './AppBar.css';
+import './style.css';
 
 function AppBar() {
     const [anchorElUser, setAnchorElUser] = React.useState(null);
